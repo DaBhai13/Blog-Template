@@ -1,0 +1,175 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+/* ==========================================================================
+   Base styles
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+	font-family: 'Open Sans', calibri, arial, sans-serif;
+	font-weight: 300;
+}
+
+img{
+	max-width: 100%;
+	height: auto;
+}
+
+a{
+	text-decoration: none;
+	color: inherit;
+}
+
+li{
+	list-style: none;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Custom styles
+   ========================================================================== */
+
+/* Header */
+
+header{
+	width: 100%;
+	padding: 40px 0;
+	background: #1874CD;
+}
+
+.main-header{
+	color: #fff;
+	text-align: center;
+	font-weight: 300;
+	font-size: 2.7em;
+}
+
+/* Navigation */
+
+nav ul{
+	padding: 0;
+	margin:  0;
+	background: #00BFFF;
+	overflow: hidden;
+	color: #fff;
+	text-align: center;
+	-webkit-transition: max-height 0.5s;
+	transition: max-height 0.5s;
+}
+
+nav ul li{
+	display: inline-block;
+	padding: 20px;
+	font-size:1.1em;
+	-webkit-transition: background .5s;
+	transition: background .5s;
+}
+
+nav ul li:hover{
+	background: #4682B4;
+}
+
+.handle{
+	width: 100%;
+	-webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+	background: #104E8B;
+	text-align: left;
+	padding: 15px 20px;
+	color: #fff;
+	cursor: pointer;
+	display: none;
+}
+
+.hamburger-icon{
+	float: right;
+	clear: both;
+	margin-top: -5px;
+}
+
+/* Container */
+
+.container{
+	margin: 0 auto;
+	padding: 40px;
+	width: 70%;
+}
+
+.font-styles{
+	line-height: 1.5em;
+	font-size: 1.05em;
+	font-weight: normal;
+}
+
+.sub-heading{
+	font-size:2em;
+	font-weight: 400;
+}
+
+/* Navigation Media Queries */
+
+@media screen and (max-width: 580px){
+	nav ul{
+		max-height: 0;
+	}
+	.reveal{
+		max-height:19em;
+	}
+	nav ul li{
+		 -webkit-box-sizing: border-box;
+		 -moz-box-sizing: border-box;
+     	 -ms-box-sizing: border-box;
+         box-sizing: border-box;
+		 width:100%;
+		 padding: 15px;
+	}
+	.handle{
+		display: block;
+	}
+
+}
